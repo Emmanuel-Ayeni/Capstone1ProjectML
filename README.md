@@ -93,3 +93,60 @@ $ docker run -p 9696:9696 attrition-predict-app
   ![image](https://github.com/user-attachments/assets/71bb161c-9191-4ad4-8f4a-c9b718f2a91c)
 
 ### Use the same steps above (curl, Postman, or Python) to interact with the application.
+
+
+## Cloud Infrastructure Deployment
+
+Application to deploy on Render cloud.
+
+#### Docker HUB: Create an image repository
+
+1. Go to [**`Docker Hub`**](https://hub.docker.com) and sign in by creating account.
+2. Select Create Repository.
+3. On the Create Repository page, enter the following information:
+  - Repository name - `HR-Attrition-Prediction`
+  - Short description - Flask-based REST API service for HR-Attrition-Prediction
+  - Visibility - select `Public` to allow others to pull your app
+4. Select Create to create a new repository.
+5. Go to your docker hub account settings -> Personal access tokens and create an access token:
+  - description: my-access-token
+  - permissions: Read & Write
+
+#### Push docker image to docker hub
+
+```
+docker login -u <your_dockerhub_username> -p <your_access_token>
+docker push <your_dockerhub_username>/hr-attrition-prediction:latest
+```
+
+#### Deploy to `Render` cloud service
+
+1. In the [**`Render Dashboard`**](https://dashboard.render.com/), sign in (create an account if needed) and click `+ New` -> `Web service`
+- Source Code: Existing Image
+- Image URL: `<your_dockerhub_username>/hr-attrition-prediction`
+- Name: `hr-attrition-prediction`
+- Region: `<your-nearest-region>`
+- Instance type: `Free`
+2. Click -> Deploy web service. Wait till service starts successfully.
+3. Note down your web service URL
+
+![Render desktop](images/render-web-service.png)
+
+#### Test cloud-based service
+
+1. Update `predict-render-test.py` with you URL in this format: `url = "https://<your-render-url>/predict"`
+2. Test
+```
+pipenv run python predict-render-test.py
+```
+Result:
+```
+
+--------------------------------------------------
+{'predictions by model': [{'predicted_status': 'Graduate', 'probabilities': {'Dropout': 0.027190541365371718, 'Enrolled': 0.09465016268419602, 'Graduate': 0.8781592959504326}, 'student_id': 1}]}
+--------------------------------------------------
+```
+
+![Results screenshot](images/result.png)
+
+#### Shut down web service
