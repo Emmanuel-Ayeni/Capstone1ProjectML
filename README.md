@@ -14,11 +14,19 @@ The step-by-step instructions, start from setting up the environment with pipenv
 ### Clone the Application Code
 Please ensure you have the application code (including Pipfile, Pipfile.lock, and app.py) in your working directory. If it's in a repository, clone it:
 
-* $ git clone <([https://github.com/Emmanuel-Ayeni/mlzoomcamp-Capstone1ProjectML](https://github.com/Emmanuel-Ayeni/Capstone1ProjectML.git))>
+```
+  $ git clone <([https://github.com/Emmanuel-Ayeni/mlzoomcamp-Capstone1ProjectML](https://github.com/Emmanuel-Ayeni/Capstone1ProjectML.git))>
+```
+
+```
 * $ cd <repository_directory>
+```
 
 ### Install pipenv
-* $ pip install pipenv
+
+```
+$ pip install pipenv
+```
 
 ### Set Up the Virtual Environment
 Run pipenv install to create a virtual environment and install all dependencies specified in the Pipfile.lock:
