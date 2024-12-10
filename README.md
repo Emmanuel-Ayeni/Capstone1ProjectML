@@ -19,7 +19,7 @@ Please ensure you have the application code (including Pipfile, Pipfile.lock, an
 ```
 
 ```
-* $ cd <repository_directory>
+$ cd <repository_directory>
 ```
 
 ### Install pipenv
@@ -30,22 +30,33 @@ $ pip install pipenv
 
 ### Set Up the Virtual Environment
 Run pipenv install to create a virtual environment and install all dependencies specified in the Pipfile.lock:
-* $ pipenv install
+
+```
+$ pipenv install
+```
 
 ### Activate the Virtual Environment
 Enter the pipenv shell to work within the virtual environment:
-* $ pipenv shell
 
+```
+ $ pipenv shell
+```
 ### Run the attrition-final.py
 Extract the dataset from Kaggle via API, generate an XGBoost model and download the attrition model by running the attrition-final.py script:
 * Ensure you set up a Kaggle API before running the script.
-* $ pipenv run python attrition-final.py
+
+```
+$ pipenv run python attrition-final.py
+```
   
 ![image](https://github.com/user-attachments/assets/4a50aaa2-0793-4a04-9702-5f90f9d95f76)
 
 ### Run the Flask Application
 Start the Flask application by running the app.py script:
-* $ pipenv run python app.py
+
+```
+$ pipenv run python app.py
+```
 This will start the Flask application, and you should see an output similar to:
 * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
 
