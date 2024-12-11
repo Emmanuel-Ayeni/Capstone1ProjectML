@@ -88,7 +88,7 @@ Open the Jupyter Notebook from your browse and double-click on predict_test.ipyn
 ![image](https://github.com/user-attachments/assets/fc8dfd8b-9e0e-4b72-8b3c-86c9fa26ded4)
 
 Run the input data as a test:
-'''
+```
 input_data = {
     "age": 34,
     "department": "sales",
@@ -114,9 +114,11 @@ input_data = {
     "years_since_last_promotion": 1,
     "years_with_curr_manager": 1
 }
-'''
+```
 
 * Step-click through to the last cell in the predict_test.ipynb and see the prediction result.
+
+  
 ![image](https://github.com/user-attachments/assets/1261438c-de44-4015-a840-57e5942a438e)
 
 
