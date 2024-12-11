@@ -5,7 +5,7 @@
 ## Introduction
 <p>This dataset contains employee information, including their demographics, job role, job satisfaction, work-life balance, and whether they have left the company (attrition).</p>
 
-The focus of the task is to build predictive models which can identify which employees are at a higher risk of leaving the company. This could help in taking some proactive measures to retain valuable employees. This dataset is collected for a Human resource application and the source is from Kaggle: https://www.kaggle.com/datasets/itssuru/hr-employee-attrition
+The task focuses on building predictive models to identify which employees are at a higher risk of leaving the company. This could help in taking some proactive measures to retain valuable employees. This dataset is collected for a Human resource application and the source is from Kaggle: https://www.kaggle.com/datasets/itssuru/hr-employee-attrition
 
 Attrition: Represents the measure of employees leaving a company voluntarily or involuntarily. HR uses the figure to track and understand how things are going at a company
 
@@ -79,7 +79,8 @@ Enter the pipenv shell to work within the virtual environment:
 Open the Jupyter Notebook from your browse and double-click on predict_test.ipynb
 ![image](https://github.com/user-attachments/assets/fc8dfd8b-9e0e-4b72-8b3c-86c9fa26ded4)
 
-Run the input data as test
+Run the input data as a test:
+'''
 input_data = {
     "age": 34,
     "department": "sales",
@@ -105,6 +106,7 @@ input_data = {
     "years_since_last_promotion": 1,
     "years_with_curr_manager": 1
 }
+'''
 
 * Step-click through to the last cell in the predict_test.ipynb and see the prediction result.
 ![image](https://github.com/user-attachments/assets/1261438c-de44-4015-a840-57e5942a438e)
