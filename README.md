@@ -37,7 +37,7 @@ Run pipenv install to create a virtual environment and install all dependencies 
 $ pipenv install
 ```
 
-### Activate the Virtual Environment
+### Activate the Virtual Environment for Development Test Functions
 Enter the pipenv shell to work within the virtual environment:
 
 ```
@@ -63,12 +63,55 @@ This will start the Flask application, and you should see an output similar to:
 * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
 
   ![image](https://github.com/user-attachments/assets/d3b9e392-700f-4da8-b12f-9dcac744a672)
-
+#### Run Test from Jupyter Notebool
 * Open a new terminal window to interact with the web service.
 * Start up a Jupyter notebook.
 * Open up the predict_test.ipynb and use the test to run JSON formatted data for the prediction service.
 
-  ![image](https://github.com/user-attachments/assets/e1c3539b-36ca-4664-addb-0eb323a80db9)
+### Activate the Virtual Environment for Jupyter Notebook
+Enter the pipenv shell to work within the virtual environment:
+
+```
+ $ pipenv shell
+```
+![image](https://github.com/user-attachments/assets/c969f4c6-27fa-455f-b3ec-da1c775f2df0)
+
+Open the Jupyter Notebook from your browse and double-click on predict_test.ipynb
+![image](https://github.com/user-attachments/assets/fc8dfd8b-9e0e-4b72-8b3c-86c9fa26ded4)
+
+Run the input data as test
+input_data = {
+    "age": 34,
+    "department": "sales",
+    "distance_from_home": 10,
+    "education": 3,
+    "environment_satisfaction": 4,
+    "gender": "male",
+    "job_involvement": 3,
+    "job_level": 2,
+    "job_role": "sales_executive",
+    "marital_status": "single",
+    "monthly_income": 4000,
+    "num_companies_worked": 2,
+    "over_time": "yes",
+    "percent_salary_hike": 15,
+    "performance_rating": 3,
+    "relationship_satisfaction": 3,
+    "total_working_years": 5,
+    "training_times_last_year": 2,
+    "work_life_balance": 2,
+    "years_at_company": 5,
+    "years_in_current_role": 1,
+    "years_since_last_promotion": 1,
+    "years_with_curr_manager": 1
+}
+
+* Step-click through to the last cell in the predict_test.ipynb and see the prediction result.
+![image](https://github.com/user-attachments/assets/1261438c-de44-4015-a840-57e5942a438e)
+
+
+
+![image](https://github.com/user-attachments/assets/e1c3539b-36ca-4664-addb-0eb323a80db9)
 
 * Prediction result is noted after the last cell.
 * Check the Service log message as 200: OK or indicates a successful request.
