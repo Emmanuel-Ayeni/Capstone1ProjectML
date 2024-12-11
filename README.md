@@ -1,5 +1,7 @@
 # ML-Zoomcamp-Capstone1-Project
+## HR Attrition Prediction
 
+![hr-infographic](https://github.com/user-attachments/assets/c16bd309-9cbe-4526-9e7a-459ca28674ba)
 
 
 ## Introduction
