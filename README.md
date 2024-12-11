@@ -5,7 +5,7 @@
 ## Introduction
 <p>This dataset contains employee information, including their demographics, job role, job satisfaction, work-life balance, and whether they have left the company (attrition).</p>
 
-The task focuses on building predictive models to identify which employees are at a higher risk of leaving the company. This could help in taking some proactive measures to retain valuable employees. This dataset is collected for a Human resource application and the source is from Kaggle: https://www.kaggle.com/datasets/itssuru/hr-employee-attrition
+The task focuses on building predictive models to identify which employees are at risk of leaving the company. This could help in taking some proactive measures to retain valuable employees. This dataset is collected for a Human resource application and the source is from Kaggle: https://www.kaggle.com/datasets/itssuru/hr-employee-attrition
 
 Attrition: Represents the measure of employees leaving a company voluntarily or involuntarily. HR uses the figure to track and understand how things are going at a company
 
@@ -31,20 +31,21 @@ $ pip install pipenv
 ```
 
 ### Set Up the Virtual Environment
-Run pipenv install to create a virtual environment and install all dependencies specified in the Pipfile.lock:
+* Run pipenv install to create a virtual environment and install all dependencies specified in the Pipfile.lock:
 
 ```
 $ pipenv install
 ```
 
 ### Activate the Virtual Environment for Development Test Functions
-Enter the pipenv shell to work within the virtual environment:
+* Enter the pipenv shell to work within the virtual environment:
 
 ```
  $ pipenv shell
 ```
 ### Run the attrition-final.py
-Extract the dataset from Kaggle via API, generate an XGBoost model and download the attrition model by running the attrition-final.py script:
+* Extract the dataset from Kaggle via API, generate an XGBoost model and download the attrition model by
+  running the attrition-final.py script:
 * Ensure you set up a Kaggle API before running the script.
 
 ```
@@ -53,24 +54,27 @@ $ pipenv run python attrition-final.py
   
 ![image](https://github.com/user-attachments/assets/4a50aaa2-0793-4a04-9702-5f90f9d95f76)
 
+### Interfacing with the Prediction Endpoint
 ### Run the Flask Application
-Start the Flask application by running the app.py script:
+#### Run Application Service Using Python Script
+* Start the Flask application by running the app.py script:
 
 ```
 $ pipenv run python app.py
 ```
-This will start the Flask application, and you should see an output similar to:
+
+* This will start the Flask application, and you should see an output similar to:
 * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
 
   ![image](https://github.com/user-attachments/assets/d3b9e392-700f-4da8-b12f-9dcac744a672)
 
   
-#### Run Test from Jupyter Notebook
+#### Run Application Test from Jupyter Notebook
 * Open a new terminal window to interact with the web service.
 * Start up a Jupyter notebook.
 * Open up the predict_test.ipynb and use the test to run JSON formatted data for the prediction service.
 
-### Activate the Virtual Environment for Jupyter Notebook
+##### Activate the Virtual Environment for Jupyter Notebook
 Enter the pipenv shell to work within the virtual environment:
 
 ```
@@ -129,11 +133,8 @@ input_data = {
 * Check the Service log message as 200: OK or indicates a successful request.
 ![image](https://github.com/user-attachments/assets/af0d84f2-adcc-43bd-8689-25bd558535e5)
 
-  
-### Interfacing with the Prediction Endpoint
-#### Using Python
-#### Using Curl
-#### Using Postman
+#### Using Curl ?
+#### Using Postman ?
 
 ## Deploying with Docker
 
