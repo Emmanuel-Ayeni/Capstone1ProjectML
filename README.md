@@ -77,13 +77,13 @@ $ pipenv install
 ### Run the attrition-final.py
 * Extract the dataset from Kaggle via API, generate an XGBoost model and download the attrition model by
   running the attrition-final.py script:
-* Ensure you set up a Kaggle API before running the script.
+* Please set up a Kaggle API before running the script.
 
 ```
-$ pipenv run python attrition-final.py
+$ pipenv run python train.py
 ```
   
-![image](https://github.com/user-attachments/assets/4a50aaa2-0793-4a04-9702-5f90f9d95f76)
+![image](https://github.com/user-attachments/assets/5df5585d-0b21-4353-80b8-4d6a7bfaaf65)
 
 ### Interfacing with the Prediction Endpoint
 ### Run the Flask Application
