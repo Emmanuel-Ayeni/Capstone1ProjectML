@@ -21,11 +21,15 @@ My repository/folder contains the following:
 * Description of the problem
 * Instructions on how to run the project Data
 
-### Notebook (name - notebook.ipynb)
+### Notebook - notebook.ipynb
 * Data preparation and data cleaning
 * EDA
 * Feature Importance Analysis
 * Model selection process and parameter tuning
+
+### Script train.py
+* Training the final model
+* Saving it to a file (Using Pickle)
 
 ### Script train.py (name - App.py)
 * Training the final model
@@ -48,7 +52,7 @@ Video or image of how you interact with the deployed service
 Please ensure you have the application code (including Pipfile, Pipfile.lock, and app.py) in your working directory. If it's in a repository, clone it:
 
 ```
-  $ git clone <([https://github.com/Emmanuel-Ayeni/mlzoomcamp-Capstone1ProjectML](https://github.com/Emmanuel-Ayeni/Capstone1ProjectML.git))>
+$ git clone <([https://github.com/Emmanuel-Ayeni/mlzoomcamp-Capstone1ProjectML](https://github.com/Emmanuel-Ayeni/Capstone1ProjectML.git))>
 ```
 
 ```
@@ -74,10 +78,13 @@ $ pipenv install
 ```
  $ pipenv shell
 ```
-### Run the attrition-final.py
+### Run the train.py
 * Extract the dataset from Kaggle via API, generate an XGBoost model and download the attrition model by
   running the attrition-final.py script:
 * Please set up a Kaggle API before running the script.
+
+![image](https://github.com/user-attachments/assets/0a75b9dc-42be-4a8b-86b7-2a534492fce6)
+
 
 ```
 $ pipenv run python train.py
