@@ -79,21 +79,29 @@ $ pipenv install
  $ pipenv shell
 ```
 ### Run the train.py
-* Extract the dataset from Kaggle via API, generate an XGBoost model and download the attrition model by
-  running the attrition-final.py script:
+* Extract the dataset from Kaggle via API.
+* Preprocess the Dataset.
+* Train and generate an XGBoost model.
+* Evaluate the model.
+* Save the Model.
 * Please set up a Kaggle API before running the script.
 
-![image](https://github.com/user-attachments/assets/0a75b9dc-42be-4a8b-86b7-2a534492fce6)
+![image](https://github.com/user-attachments/assets/51897f9a-1b2c-4b30-bdbb-95aff8f2e3a4)
 
 
 ```
 $ pipenv run python train.py
 ```
-  
-![image](https://github.com/user-attachments/assets/5df5585d-0b21-4353-80b8-4d6a7bfaaf65)
+![image](https://github.com/user-attachments/assets/a6e10c59-4491-47c0-8aa1-4e4aac71d1c5)
+
 
 ### Interfacing with the Prediction Endpoint
+
+
+
 ### Run the Flask Application
+
+
 #### Run Application Service Using Python Script
 * Start the Flask application by running the app.py script:
 
@@ -172,6 +180,8 @@ input_data = {
 ![image](https://github.com/user-attachments/assets/af0d84f2-adcc-43bd-8689-25bd558535e5)
 
 #### Using Curl ?
+
+
 #### Using Postman ?
 
 ## Deploying with Docker
