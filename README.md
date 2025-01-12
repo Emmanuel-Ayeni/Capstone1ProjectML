@@ -95,7 +95,7 @@ $ pipenv run python train.py
 ![image](https://github.com/user-attachments/assets/a6e10c59-4491-47c0-8aa1-4e4aac71d1c5)
 
 
-### Interfacing with the Prediction Endpoint
+## Interfacing with the Prediction Endpoint
 
 
 
@@ -110,15 +110,16 @@ $ pipenv run python app.py
 ```
 
 * This will start the Flask application, and you should see an output similar to:
-* Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+* NB: Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
 
-  ![image](https://github.com/user-attachments/assets/d3b9e392-700f-4da8-b12f-9dcac744a672)
+![image](https://github.com/user-attachments/assets/800d2f98-e193-40bf-9a61-a2bdb4078712)
 
   
 #### Run Application Test from Jupyter Notebook
 * Open a new terminal window to interact with the web service.
 * Start up a Jupyter notebook.
 * Open up the predict_test.ipynb and use the test to run JSON formatted data for the prediction service.
+* Press CTRL+C to quit, running on http://127.0.0.1:5000/
 
 ##### Activate the Virtual Environment for Jupyter Notebook
 Enter the pipenv shell to work within the virtual environment:
@@ -128,10 +129,10 @@ Enter the pipenv shell to work within the virtual environment:
 ```
 
 ```
-$ pipenv run python app.py
+$ pipenv jupyter notebook
 ```
 
-![image](https://github.com/user-attachments/assets/b4859f64-782f-448f-bd00-5a515caa49e0)
+![image](https://github.com/user-attachments/assets/e20b2ea1-867f-4d53-87c6-3114227b8250)
 
 
 Open the Jupyter Notebook from your browse and double-click on predict_test.ipynb
