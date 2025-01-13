@@ -119,6 +119,12 @@ Test the HR Prediction code with a test input (predict-test.py)
 ![image](https://github.com/user-attachments/assets/70ca4c71-342b-4a9c-8dbd-3573bcc9a93f)
 
 
+Also, note the 200k OK message from the webserver
+
+![image](https://github.com/user-attachments/assets/99de40ed-e4f5-4665-9b4b-eb4dcc37b64b)
+
+
+
 ```
 $ pipenv run python app.py
 ```
