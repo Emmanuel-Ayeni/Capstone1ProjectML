@@ -200,10 +200,6 @@ input_data = {
 * Check the Service log message as 200: OK or indicates a successful request.
 ![image](https://github.com/user-attachments/assets/af0d84f2-adcc-43bd-8689-25bd558535e5)
 
-#### Using Curl ?
-
-
-#### Using Postman ?
 
 ## Deploying with Docker
 
@@ -220,7 +216,10 @@ $ docker run -p 9696:9696 attrition-predict-app
   ![image](https://github.com/user-attachments/assets/71bb161c-9191-4ad4-8f4a-c9b718f2a91c)
 
 ### Use the same steps above (curl, Postman, or Python) to interact with the application.
+#### Using Curl ?
 
+
+#### Using Postman ?
 
 ## Cloud Infrastructure Deployment
 
