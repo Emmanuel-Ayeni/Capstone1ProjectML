@@ -248,7 +248,7 @@ docker push <your_dockerhub_username>/hr-attrition-prediction:latest
 - Name: `hr-attrition-prediction`
 - Region: `<your-nearest-region>`
 - Instance type: `Free`
-2. Click -> Deploy web service. Wait till service starts successfully.
+2. Click -> Deploy web service. Please wait until service starts successfully.
 3. Note down your web service URL
 
 ![Render desktop](images/render-web-service.png)
@@ -263,9 +263,9 @@ pipenv run python predict-render-test.py
 Result:
 ```
 
---------------------------------------------------
+?????--------------------------------------------------
 {'predictions by model': [{'predicted_status': 'Graduate', 'probabilities': {'Dropout': 0.027190541365371718, 'Enrolled': 0.09465016268419602, 'Graduate': 0.8781592959504326}, 'student_id': 1}]}
---------------------------------------------------
+--------------------------------------------------?????
 ```
 
 ![Results screenshot](images/result.png)
