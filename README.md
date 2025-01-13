@@ -31,16 +31,17 @@ My repository/folder contains the following:
 * Training the final model
 * Saving it to a file (Using Pickle)
 
-### Script train.py (name - App.py)
+  
+### Script predict.py
+* Loading the model
+* Serving it via a web service (with Flask)
+* Files with dependencies
+* Pipenv and Pipenv.lock 
+  
+
+  ### Script train.py (name - App.py)
 * Training the final model
 * Saving it to a file (e.g. pickle) or saving it with specialized software (BentoML)
-  
-### Script predict.py (suggested name)
-* Loading the model
-* Serving it via a web service (with Flask or specialized software - BentoML, KServe, etc)
-* Files with dependencies
-* Pipenv and Pipenv.lock if you use Pipenv
-* or equivalents: conda environment file, requirements.txt or pyproject.toml
 
 ### Dockerfile for running the service
 ### Deployment
@@ -103,7 +104,18 @@ $ pipenv run python train.py
 
 
 #### Run Application Service Using Python Script
-* Start the Flask application by running the app.py script:
+* Start the Flask application by running the predict.py script:
+  
+```
+$ pipenv run python predict.py
+```
+Runs the development server 
+
+![image](https://github.com/user-attachments/assets/f81a8daf-0d80-4495-a235-58ae9b3c5b38)
+
+Test the HR Prediction code with a test input (predict-test.py).
+![image](https://github.com/user-attachments/assets/70ca4c71-342b-4a9c-8dbd-3573bcc9a93f)
+
 
 ```
 $ pipenv run python app.py
