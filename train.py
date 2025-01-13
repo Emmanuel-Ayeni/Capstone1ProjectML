@@ -88,7 +88,6 @@ xgb_params = {
     'objective': 'binary:logistic',
     'eval_metric': 'auc',
     'subsample': 0.8, 
-    'n_estimators': 200,  
     'lambda': 1, 
     'gamma': 0,  
     'colsample_bytree': 0.6, 

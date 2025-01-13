@@ -10,10 +10,9 @@ scikit-learn = "*"
 matplotlib = "*"
 seaborn = "*"
 jupyter = "*"
-kaggle = "*"
-lazypredict = "*"
 flask = "*"
-waitress = "*"
+xgboost = "*"
+kaggle = "*"
 
 [dev-packages]
 pytest = "*"
@@ -21,4 +20,3 @@ black = "*"
 
 [requires]
 python_version = "3.11"
-python_full_version = "3.11.7"
