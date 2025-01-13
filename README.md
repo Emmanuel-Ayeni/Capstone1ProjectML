@@ -113,7 +113,9 @@ Runs the development server
 
 ![image](https://github.com/user-attachments/assets/f81a8daf-0d80-4495-a235-58ae9b3c5b38)
 
-Test the HR Prediction code with a test input (predict-test.py).
+Test the HR Prediction code with a test input (predict-test.py)
+
+
 ![image](https://github.com/user-attachments/assets/70ca4c71-342b-4a9c-8dbd-3573bcc9a93f)
 
 
